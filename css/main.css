@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #efefef;
+  margin: 0px;
+}
+
+.top-banner {
+  text-align: center;
+  padding: 20px 0;
+  background: #ffffff;
+  border-bottom: 5px solid #bfbfbf;
+}
+.title {
+  font-size: 20px;
+  margin: 0px;
+  font-weight: 500;
+}
+.layout {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 10px 10px;
+}
+
+.num-cards-layout {
+  width: 80%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 0px 10px 10px;
+}
+.numberCard {
+  padding: 60px;
+  font-size: 100px;
+  text-align: center;
+  color: #ffffff;
+}
+.btn-layout {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.btn {
+  background-color: #72c3dc;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 12px 43px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 5px 0px #2b8ead;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+footer p {
+  margin-top: 0px;
+  text-align: center;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 13px;
+}
+
+/***media queries***/
+@media (min-width: 320px) and (max-width: 767px) {
+  body {
+    background-color: #ffffff;
+  }
+  .top-banner {
+    background-color: #000000;
+    border: none;
+    padding: 10px;
+  }
+  .title {
+    color: #ffffff;
+    font-weight: 300;
+  }
+  .layout {
+    padding: 0px;
+    flex-direction: column-reverse;
+  }
+  .num-cards-layout {
+    width: 95%;
+    grid-template-columns: auto;
+  }
+  .numberCard {
+    margin: 5px 0px;
+    padding: 10px 0px;
+    font-size: 20px;
+    color: #000000;
+  }
+
+  .btn {
+    padding: 12px 20px;
+  }
+
+  .btn-layout {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .btn {
+    width: 30%;
+  }
+}
